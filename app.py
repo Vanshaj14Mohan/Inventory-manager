@@ -44,7 +44,7 @@ else:
     st.info('No products in inventory.')
 
 # Auto-alert for perishable items expiring soon
-st.header('Expiring Soon (within 5 days)')
+st.header('Expiring Soon (within 5 days)') #5 days the time limit set
 expiring = inventory.get_expiring_soon()
 if expiring:
     for p in expiring:
